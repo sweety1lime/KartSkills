@@ -30,5 +30,11 @@ namespace KartSkills
             mainWindow.Show();
             this.Close();
         }
+
+        private void ShowContact(object sender, RoutedEventArgs e)
+        {
+            Contacts contacts = new Contacts();
+            contacts.Show();
+        }
     }
 }

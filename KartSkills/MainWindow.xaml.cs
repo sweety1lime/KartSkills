@@ -25,5 +25,33 @@ namespace KartSkills
             InitializeComponent();
         }
         private void CloseApplication(object sender, MouseButtonEventArgs e) => Environment.Exit(0);
+
+        private void CheckRacer(object sender, RoutedEventArgs e)
+        {
+            RacerCheck racerCheck = new RacerCheck();
+            racerCheck.Show();
+            this.Close();
+        }
+
+        private void Auth(object sender, RoutedEventArgs e)
+        {
+            Authorization authorization = new Authorization();
+            authorization.Show();
+            this.Close();
+        }
+
+        private void Info(object sender, RoutedEventArgs e)
+        {
+            FullInfo fullInfo = new FullInfo();
+            fullInfo.Show();
+            this.Close();
+        }
+
+        private void Sponsor(object sender, RoutedEventArgs e)
+        {
+            Sponsorship sponsorship = new Sponsorship();
+            sponsorship.Show();
+            this.Close();
+        }
     }
 }

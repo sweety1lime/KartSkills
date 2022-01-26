@@ -23,5 +23,19 @@ namespace KartSkills
         }
 
         private void CloseApplication(object sender, MouseButtonEventArgs e) => Environment.Exit(0);
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
+
+        private void Pay(object sender, RoutedEventArgs e)
+        {
+            CompleteSponsor completeSponsor = new CompleteSponsor();
+            completeSponsor.Show();
+            this.Close();
+        }
     }
 }

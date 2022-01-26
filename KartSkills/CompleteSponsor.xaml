@@ -32,7 +32,7 @@
                     <TextBlock x:Name="NameRacer" Text="Иван Прудов(204) из Russia" FontSize="35" HorizontalAlignment="Center" Margin="0,60,0,0"/>
                     <TextBlock x:Name="NameSponsoty" Text="Фонд Собак" FontSize="35" HorizontalAlignment="Center" Margin="0,120,0,0"/>
                     <TextBlock x:Name="SumSponsor" Text="$ 50" FontSize="60" HorizontalAlignment="Center" FontWeight="DemiBold" Margin="0,160,0,0"/>
-                    <Button x:Name="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Center" BorderThickness="1" VerticalAlignment="Bottom" Margin="20" FontSize="20" BorderBrush="Black"/>
+                    <Button x:Name="Back" Click="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Center" BorderThickness="1" VerticalAlignment="Bottom" Margin="20" FontSize="20" BorderBrush="Black"/>
 
 
                 </Grid>

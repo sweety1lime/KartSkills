@@ -26,7 +26,7 @@
 
                     <TextBlock  Text="Kart Skiils 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold" />
                     <TextBlock  Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,60,0,0"/>
-                    <Button x:Name="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" FontSize="20" BorderBrush="Black"/>
+                    <Button Click="Back" x:Name="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" FontSize="20" BorderBrush="Black"/>
                 </Grid>
                 <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
@@ -74,8 +74,8 @@
                             <Button x:Name="Minus" Height="30" Width="30" Content="-" FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,150,150,0"/>
                             <TextBox x:Name="CountMoney" Height="30" Width="80" ToolTip="" Text="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="5,150,0,0"/>
                             <Button x:Name="Plus" Height="30" Width="30" Content="+" FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="150,150,0,0"/>
-                            <Button x:Name="Pay" Height="30" Width="120" Content="Заплатить" FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,240,150,0"/>
-                            <Button x:Name="Cancel" Height="30" Width="120" Content="Отмена" FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="130,240,0,0"/>
+                            <Button x:Name="Pay" Click="Pay" Height="30" Width="120" Content="Заплатить" FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,240,150,0"/>
+                            <Button x:Name="Cancel" Click="Back" Height="30" Width="120" Content="Отмена" FontSize="20"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="130,240,0,0"/>
                             
                         </Grid>
                     </Grid>
