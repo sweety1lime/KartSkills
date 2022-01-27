@@ -13,20 +13,34 @@ using System.Windows.Shapes;
 namespace KartSkills
 {
     /// <summary>
-    /// Логика взаимодействия для CordinatorMenu.xaml
+    /// Логика взаимодействия для RegOnRace.xaml
     /// </summary>
-    public partial class CordinatorMenu : Window
+    public partial class RegOnRace : Window
     {
-        public CordinatorMenu()
+        public RegOnRace()
         {
             InitializeComponent();
         }
         private void CloseApplication(object sender, MouseButtonEventArgs e) => Environment.Exit(0);
 
-        private void LogoutClick(object sender, RoutedEventArgs e)
+        private void BackClick(object sender, RoutedEventArgs e)
+        {
+            RacerMenu racerMenu = new RacerMenu();
+            racerMenu.Show();
+            this.Close();
+        }
+
+        private void Logout(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
+            this.Close();
+        }
+
+        private void ConfirmClick(object sender, RoutedEventArgs e)
+        {
+            ConfirmRegRace confirmRegRace = new ConfirmRegRace();
+            confirmRegRace.Show();
             this.Close();
         }
     }

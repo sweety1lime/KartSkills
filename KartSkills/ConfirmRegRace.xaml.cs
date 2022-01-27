@@ -13,15 +13,22 @@ using System.Windows.Shapes;
 namespace KartSkills
 {
     /// <summary>
-    /// Логика взаимодействия для CordinatorMenu.xaml
+    /// Логика взаимодействия для ConfirmRegRace.xaml
     /// </summary>
-    public partial class CordinatorMenu : Window
+    public partial class ConfirmRegRace : Window
     {
-        public CordinatorMenu()
+        public ConfirmRegRace()
         {
             InitializeComponent();
         }
         private void CloseApplication(object sender, MouseButtonEventArgs e) => Environment.Exit(0);
+
+        private void OkClick(object sender, RoutedEventArgs e)
+        {
+            RacerMenu racerMenu = new RacerMenu();
+            racerMenu.Show();
+            this.Close();
+        }
 
         private void LogoutClick(object sender, RoutedEventArgs e)
         {

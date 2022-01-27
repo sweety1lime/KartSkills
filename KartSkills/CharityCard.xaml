@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="KartSkills.CharityCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KartSkills"
+             FontFamily="Arial"
+             mc:Ignorable="d" d:DesignWidth="800" Height="120">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Logo" Height="90" Width="100" Stretch="Fill" Source="Resource/Logo.jpg"/>
+        <TextBlock x:Name="TitleCharity" Grid.Column="1" Text="Наименование благотворительной организации" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="CharityDiscription" Grid.Column="1" Text="Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности.Описание благотворительности." TextWrapping="Wrap" VerticalAlignment="Center" FontSize="20"/>
+    </Grid>
+</UserControl>

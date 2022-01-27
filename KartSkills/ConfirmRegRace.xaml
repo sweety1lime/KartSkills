@@ -1,5 +1,5 @@
-﻿<Window x:Class="KartSkills.CompleteSponsor"
-                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window x:Class="KartSkills.ConfirmRegRace"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -11,7 +11,7 @@
         Title="MainWindow" Height="560" Width="800">
     <Grid>
         <Grid>
-            <Image Source="/Image/checkered-flag-sports-tool.ico" Width="30" Height="30" Margin="25,0,0,0"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <Image Source="/Resource/checkered-flag-sports-tool.ico" Width="30" Height="30" Margin="25,0,0,0"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
             <TextBlock FontFamily="Arial" Text="Kart Skiils 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Margin="0,3,0,0"/>
             <TextBlock Text="x" FontWeight="ExtraBold" FontSize="20"  HorizontalAlignment="Right" MouseDown="CloseApplication" Margin="0,0,25,0"/>
             <TextBlock Text="_" FontWeight="ExtraBold" FontSize="20" HorizontalAlignment="Right" Margin="0,0,50,0"/>
@@ -29,11 +29,10 @@
                     <TextBlock FontFamily="Arial" Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,60,0,0"/>
                 </Grid>
                 <Grid Grid.Row="1">
-                    <TextBlock FontFamily="Arial" Text="Спасибо за спонсорскую поддержку!" FontSize="25" HorizontalAlignment="Center" Margin="0,20,0,0"/>
-                    <TextBlock FontFamily="Arial" x:Name="NameRacer" Text="Иван Прудов(204) из Russia" FontSize="35" HorizontalAlignment="Center" Margin="0,60,0,0"/>
-                    <TextBlock FontFamily="Arial" x:Name="NameSponsoty" Text="Фонд Собак" FontSize="35" HorizontalAlignment="Center" Margin="0,120,0,0"/>
-                    <TextBlock FontFamily="Arial" x:Name="SumSponsor" Text="$ 50" FontSize="60" HorizontalAlignment="Center" FontWeight="DemiBold" Margin="0,160,0,0"/>
-                    <Button FontFamily="Arial" x:Name="Back" Click="BackClick" Content="Назад" Width="100" Height="40" HorizontalAlignment="Center" BorderThickness="1" VerticalAlignment="Bottom" Margin="20" FontSize="20" BorderBrush="Black"/>
+                    <TextBlock FontFamily="Arial" Text="Спасибо за вашу регистрацию в качестве гонщика!" FontSize="25" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                    <TextBlock FontFamily="Arial"  Text="С вами свяжутся по поводы оплаты" FontSize="20" HorizontalAlignment="Center" Margin="0,60,0,0"/>
+                    <Button FontFamily="Arial" x:Name="Ok" Click="OkClick" Content="OK" Width="100" Height="40" HorizontalAlignment="Center" BorderThickness="1" VerticalAlignment="Top" Margin="0,160,0,0" FontSize="20" BorderBrush="Black"/>
+                    <Button FontFamily="Arial" x:Name="Logout" Click="LogoutClick" Content="Logout" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" VerticalAlignment="Top" Margin="609,-87,0,0" FontSize="20" BorderBrush="Black"/>
 
 
                 </Grid>

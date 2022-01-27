@@ -26,13 +26,15 @@
 
                     <TextBlock  Text="Kart Skiils 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold" />
                     <TextBlock  Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,60,0,0"/>
-                    <Button Click="Back" x:Name="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" FontSize="20" BorderBrush="Black"/>
+                    <Button Click="BackClick" x:Name="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" FontSize="20" BorderBrush="Black" Margin="25,40,0,40"/>
                 </Grid>
                 <Grid Grid.Row="1">
-             
+
                     <TextBlock  Text="Подробная информация" Margin="5" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" />
                     <Button x:Name="InfoKart" Content="Kart Skiils 2017" Width="220" FontSize="20" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,100,0,0"/>
-                    <Button x:Name="ListSponsorty" Content="Список благотворительных организаций"  Width="220" FontSize="20" Height="60" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,100,100,0"/>
+                    <Button x:Name="ListSponsorty" Click="AllCharityClick" Width="220" FontSize="20" Height="60" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,100,100,0">
+                        <TextBlock  Text="Список благотворительных организаций" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
+                    </Button>
                     <Button x:Name="LastResult" Content="Последние результаты" Width="220" FontSize="20" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,200,0,0"/>
                 </Grid>
                 <Grid Grid.Row="2" Background="Gray">

@@ -1,4 +1,4 @@
-﻿<Window x:Class="KartSkills.RacerCheck"
+﻿<Window x:Class="KartSkills.ListCharities"
                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowStyle="None"
+        Loaded="PageLoad"
         Title="MainWindow" Height="560" Width="800">
     <Grid>
         <Grid>
             <Image Source="/Image/checkered-flag-sports-tool.ico" Width="30" Height="30" Margin="25,0,0,0"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
             <TextBlock Text="Kart Skiils 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20"/>
-            <TextBlock Text="x" FontWeight="ExtraBold" FontSize="20" HorizontalAlignment="Right" Margin="0,0,25,0"/>
+            <TextBlock Text="x" FontWeight="ExtraBold" FontSize="20"  HorizontalAlignment="Right" MouseDown="CloseApplication" Margin="0,0,25,0"/>
             <TextBlock Text="_" FontWeight="ExtraBold" FontSize="20" HorizontalAlignment="Right" Margin="0,0,50,0"/>
         </Grid>
         <Border Width="750" Height="500" BorderBrush="Black" BorderThickness="2">
@@ -26,13 +27,12 @@
 
                     <TextBlock  Text="Kart Skiils 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold" />
                     <TextBlock  Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,60,0,0"/>
-                    <Button x:Name="Back" Click="BackClick" Content="Назад" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" FontSize="20" BorderBrush="Black"/>
+                    <Button Click="BackClick" x:Name="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" FontSize="20" BorderBrush="Black" Margin="25,40,0,40"/>
                 </Grid>
                 <Grid Grid.Row="1">
 
-                    <TextBlock  Text="Участвовали ранее?" Margin="0,0,0,150" FontSize="25" VerticalAlignment="Center"  HorizontalAlignment="Center" />
-                    <Button x:Name="YesCheck" Content="Да" Width="150" FontSize="20" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,200,0"/>
-                    <Button x:Name="NoCheck" Content="Нет"  Width="150" FontSize="20" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="200,0,0,0"/>
+                    <TextBlock  Text="Список благотворительных организаций" Margin="5" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                    <ListBox x:Name="ListCards" Margin="50,100,50,10"/>
                 </Grid>
                 <Grid Grid.Row="2" Background="Gray">
                     <TextBlock x:Name="TimerText" Text="До начала события осталось : " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"/>

@@ -13,17 +13,18 @@ using System.Windows.Shapes;
 namespace KartSkills
 {
     /// <summary>
-    /// Логика взаимодействия для CordinatorMenu.xaml
+    /// Логика взаимодействия для RegRacer.xaml
     /// </summary>
-    public partial class CordinatorMenu : Window
+    public partial class RegRacer : Window
     {
-        public CordinatorMenu()
+        public RegRacer()
         {
             InitializeComponent();
         }
+
         private void CloseApplication(object sender, MouseButtonEventArgs e) => Environment.Exit(0);
 
-        private void LogoutClick(object sender, RoutedEventArgs e)
+        private void BackClick(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();

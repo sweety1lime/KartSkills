@@ -31,7 +31,7 @@ namespace KartSkills
             this.Close();
         }
 
-        private void Back(object sender, RoutedEventArgs e)
+        private void BackClick(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();

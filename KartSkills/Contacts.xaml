@@ -10,10 +10,10 @@
         Title="Contacts" Height="400" Width="700">
     <Grid>
         <TextBlock Text="x" FontWeight="ExtraBold" FontSize="20"  HorizontalAlignment="Right" MouseDown="CloseApplication" Margin="0,0,25,0"/>
-        <TextBlock Text="Контакты" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,100"/>
-        <TextBlock Text="Телефон:" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" FontSize="25" Margin="0,40,200,0"/>
-        <TextBlock x:Name="Phone" VerticalAlignment="Center" Text="+7 999 999 99 99"  HorizontalAlignment="Center" FontSize="25" Margin="110,40,0,0"/>
-        <TextBlock Text="Email:" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" FontSize="25" Margin="0,100,300,0"/>
-        <TextBlock x:Name="Email" VerticalAlignment="Center" Text="example@mail.ru"  HorizontalAlignment="Center" FontSize="25" Margin="0,100,30,0"/>
+        <TextBlock FontFamily="Arial" Text="Контакты" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" Margin="0,0,0,100"/>
+        <TextBlock FontFamily="Arial" Text="Телефон:" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" FontSize="25" Margin="0,40,200,0"/>
+        <TextBlock FontFamily="Arial" x:Name="Phone" VerticalAlignment="Center" Text="+7 999 999 99 99"  HorizontalAlignment="Center" FontSize="25" Margin="110,40,0,0"/>
+        <TextBlock FontFamily="Arial" Text="Email:" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" FontSize="25" Margin="0,100,300,0"/>
+        <TextBlock FontFamily="Arial" x:Name="Email" VerticalAlignment="Center" Text="example@mail.ru"  HorizontalAlignment="Center" FontSize="25" Margin="0,100,30,0"/>
     </Grid>
 </Window>

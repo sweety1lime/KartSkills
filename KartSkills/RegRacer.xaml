@@ -1,0 +1,90 @@
+﻿<Window x:Class="KartSkills.RegRacer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KartSkills"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        FontFamily="Arial"
+        Title="MainWindow" Height="560" Width="800">
+    <Grid>
+        <Grid>
+            <Image Source="/Image/checkered-flag-sports-tool.ico" Width="30" Height="30" Margin="25,0,0,0"  VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBlock Text="Kart Skiils 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20"/>
+            <TextBlock MouseDown="CloseApplication" Text="x" FontWeight="ExtraBold" FontSize="20" HorizontalAlignment="Right" Margin="0,0,25,0"/>
+            <TextBlock Text="_" FontWeight="ExtraBold" FontSize="20" HorizontalAlignment="Right" Margin="0,0,50,0"/>
+        </Grid>
+        <Border Width="750" Height="500" BorderBrush="Black" BorderThickness="2">
+            <Grid Width="750" Height="500"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="Gray">
+
+                    <TextBlock  Text="Kart Skiils 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold" />
+                    <TextBlock  Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="25" Margin="0,60,0,0"/>
+                    <Button Click="BackClick" x:Name="Back" Content="Назад" Width="100" Height="40" HorizontalAlignment="Left" BorderThickness="1" FontSize="20" BorderBrush="Black" Margin="31,40,0,40"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Регистрация гонщика" Margin="5" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                    <Grid  Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.7*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="1.5*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="Email:" HorizontalAlignment="Center" Margin="90,10,0,0" FontSize="20"/>
+                                <TextBox Grid.Column="1" ToolTip="" Text="email@address.ru" Height="30" Width="200" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="12,10,0,0"/>
+                                <TextBlock Grid.Column="0" Text="" HorizontalAlignment="Center" Margin="90,50,0,0" FontSize="20"/>
+                                <TextBlock Grid.Column="0" Text="Пароль:" HorizontalAlignment="Center" Margin="75,50,0,0" FontSize="20"/>
+                                <TextBox Grid.Column="1"  Height="30" Text="Password" Width="180" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="12,50,0,0"/>
+                                <TextBlock Grid.Column="0" Text="Повторите пароль:" HorizontalAlignment="Center" Margin="0,90,0,0" FontSize="20"/>
+                                <TextBox Grid.Column="1" ToolTip="Re-enter password" Text="Re-enter password" Height="30" Width="180" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="12,90,0,0" RenderTransformOrigin="0.54,0.4"/>
+                                <TextBlock Grid.Column="0" Text="Имя:" HorizontalAlignment="Center" Margin="110,130,0,0" FontSize="20"/>
+                                <TextBox Grid.Column="1" ToolTip="Ваше имя" Text="Имя" Height="30" Width="180" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="12,130,0,0"/>
+                                <TextBlock Grid.Column="0" Text="Фамилия:" HorizontalAlignment="Center" Margin="80,170,0,0" FontSize="20"/>
+                                <TextBox Grid.Column="1" ToolTip="Ваше имя" Text="Фамилия" Height="30" Width="180" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="12,170,0,0"/>
+                                <TextBlock Grid.Column="0" Text="Пол:" HorizontalAlignment="Center" Margin="110,210,0,0" FontSize="20"/>
+                                <ComboBox Grid.Column="1" SelectedItem="0" ToolTip="Ваше имя" Text="123" Height="30" Width="180" BorderThickness="1" BorderBrush="Black" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="12,205,0,0" Background="{x:Null}">
+                                    <ComboBoxItem Content="Мужской"/>
+                                    <ComboBoxItem Content="Женский"/>
+                                </ComboBox>
+                                <Button Grid.Column="1" Content="Регистрация" FontSize="20" Height="30" Margin="133,246,10,4"/>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Image Margin="197,0,26,165" Stretch="Fill" Source="Resource/PhotoNone.jpg"/>
+                            <TextBlock Text="Фото файл:" FontSize="20" VerticalAlignment="Top" Margin="10,117,0,0"/>
+                            <TextBox Text="Photo.jpg" Height="30" Margin="0,140,129,110" FontSize="20" VerticalContentAlignment="Center"/>
+                            <Button Content="Просмотр" FontSize="20" Height="30" Margin="197,140,10,110"/>
+                            <TextBlock Text="Дата рождения:" FontSize="20" VerticalAlignment="Top" Margin="5,185,5,0"/>
+                            <TextBox Text="1978-07-16" Height="30" Margin="159,181,28,69" FontSize="20" VerticalContentAlignment="Center"/>
+                            <TextBlock Text="Страна:" FontSize="20" VerticalAlignment="Top" Margin="5,220,5,0"/>
+                            <ComboBox SelectedItem="0" ToolTip="Ваше имя" Text="123" Height="30" Width="180" BorderThickness="1" BorderBrush="Black" Margin="103,216,26,34">
+                                <ComboBoxItem Content="Russia"/>
+                            </ComboBox>
+                            <Button x:Name="Cancel" Click="BackClick"  Content="Отмена" FontSize="20" Height="30" Margin="0,248,219,2"/>
+
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2" Background="Gray">
+                    <TextBlock x:Name="TimerText" Text="До начала события осталось : " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
